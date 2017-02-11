@@ -1,0 +1,576 @@
+/***************************
+CSS - Macaulay Business Club
+Version 2
+Ramanpreet Chand, VP Web 
+****************************/
+
+html body {
+  width: 100%;
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+
+  width: 100%;
+  height: auto;
+
+  box-shadow: 0px 5px 5px #eeeeee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+}
+
+/* Logo */
+logo {
+  margin-left: 1em;
+}
+
+/* Navigation */
+nav {
+  float: right;
+  margin-right: 2em;
+  margin-top: 1.5em;
+}
+
+nav div a {
+	color: #000;
+	text-decoration: none;
+  transition: background-image .3s;
+  padding: 1em 1.5em;
+}
+
+nav div a:hover {
+	background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #fff;
+}
+
+/*nav .icon {
+  display: none;  
+}*/
+
+/* Dropdown Button */
+button.dropbtn {
+  border: none;
+  cursor: pointer;
+
+  padding: 1em 1.5em;
+
+  background-color: #fff;
+  transition: background-color .3s;
+}
+
+button.dropbtn:hover {
+	background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #fff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+nav div, nav div.dropdown {
+  position: relative;
+  display: inline-block;
+
+  text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  min-width: 125px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover {
+  background-color: #eeeeee;
+}
+
+button.dropbtn:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #000;
+  float: right;
+  margin-left: 5px;
+}
+
+button.dropbtn:hover:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+} 
+
+/******************
+* Main - All Pages 
+******************/
+
+#main-index {
+  position: relative;
+  margin-top: 5em;
+}
+
+main {
+  margin-top: 10em
+}
+
+/******************
+* Text features 
+******************/
+
+.main-header-text {
+	font-size: 40px;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+
+  padding: 1.25em 0;
+
+  text-align:center; 
+}
+
+.header-text, .subheader-text {
+  font-size: 28px;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+
+.subheader-text {
+  font-size: 20px;
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.article-header-text {
+  font-size: 20px;
+}
+.article-blurb-text {
+  font-size: 16px;
+}
+
+#text-about {
+  text-align: justify;
+  padding: 0 4em;
+  font-size: 16px;
+}
+
+/******************
+* Club Banner 
+******************/
+
+.banner {
+  background: url(../images/mbcLogos/banner3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 30em;
+
+  margin-top: 7em;
+}
+
+#banner-header-text {
+  color: #fff;
+
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+
+  padding-top: 170px;
+  text-align: center;
+}
+
+/******************
+/* Main Content Home Page 
+******************/
+
+#about-subheading {
+  padding: 1em 0;
+}
+
+.about-small-card, .about-small-card-2 {
+  padding: 2.5em 0;
+}
+
+.about-small-card:hover {
+  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #fff;
+}
+
+.about-small-card-2:hover {
+  background-image: linear-gradient(to top right, #BFDDE0, #FFFFFF);
+}
+
+.about-small-header {
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+}
+
+.about-small-description {
+  text-align: justify-all;
+  padding: 0 1.5em;
+}
+
+.news-row {
+  margin-bottom: 1.5em;
+}
+
+.card-title {
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+
+.card-text {
+  padding-bottom: 1em;
+}
+
+.small-date {
+  font-family: 'Arvo', serif;
+  font-size: 12px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.readMore-btn {
+  padding: 1em;
+  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #fff;
+
+  border-radius: 5px;
+}
+.readMore-btn:hover {
+  color: #BFDDE0;
+}
+
+.club-events {
+  margin-bottom: 5em;
+}
+
+/******************
+* Members Page 
+******************/
+
+.portrait-row {
+  padding: 1em 0;
+}
+.portrait {
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px #888;
+}
+.card-block {
+  padding-left: 1em;
+}
+.card-social {
+  float: right;
+  margin-top: -3.5em;
+  padding-right: 1em;
+}
+
+
+/******************
+* Events Page 
+******************/
+
+.date-text {font-size: 28px}
+
+.event-heading {font-size: 32px;}
+
+.event-subheading {font-size: 18px}
+
+.event-description {font-size: 14px}
+
+.rsvp-link {
+  padding: 1em 1.5em;
+}
+.rsvp-link:hover {
+  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #fff;
+}
+
+.previous-events, .rsvp-link {
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+
+  padding: 1em;
+}
+
+.previous-events:hover {
+	transition: color .2s ease-in-out;
+  color: #AB2D34;
+}
+
+.pages {
+  font-size: 16px;
+  padding-top: .5em;
+}
+.pages ul {
+  float: right;
+  list-style-type: none;
+}
+.pages ul li {
+  display: inline-block;
+  border: 1px dotted black;
+  border-radius: 1000px;
+
+  padding: .25em 1em .25em 1em;
+}
+.pages ul li a {
+  text-decoration: none;
+}
+.pages ul li:hover {
+  background-color: #eee
+}
+
+/******************
+* Join Page 
+******************/
+
+.join-membership-text, .interview-tips-text {
+  font-size: 16px;
+  font-family: 'Montserrat', serif;
+
+  padding-top: 1em;
+}
+
+/******************
+* General Membership Page 
+******************/
+
+.schools-grid {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  list-style-type: none;
+}
+
+.schools-grid li {
+  display: inline-block;
+  padding: 1em;
+}
+
+/*************************
+* Career Interview Series
+* Video Text
+*************************/
+.video-title {
+  padding-top: .5em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.video-publish-date-text {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+}
+.video-blurb-text {
+  padding: .5em .5em 1em .5em;
+  text-align: justify-all;
+}
+
+/******************
+* Committees Page 
+******************/
+
+.main-descriptive-text {
+  padding: 0 5em 1.5em 5em;
+}
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 5em;
+  right: 2em;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+
+  margin-top: 3em;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: 3em;
+  padding-bottom: 4em;
+  
+  background-color: #404040;
+
+  text-align: center;
+}
+#members-footer {
+  margin-top: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-top: 2em;
+}
+
+footer ul li {
+  display: inline-block;
+}
+#footer-navigation ul li {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+#footer-navigation a {
+	color: #fff;
+
+	text-decoration: none;
+	transition: background-image .3s;
+	padding: 1em 1.5em;
+}
+
+#footer-navigation a:hover {
+	background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #fff;
+}
+
+#resources {
+	width: 100%;
+	height: auto;
+
+	margin-top: 1em;
+}
+
+#footer-location {
+	margin-top: 2em;
+
+	font-size: 16px;
+}
+
+.footer-header-subtext {
+  color: #fff;
+}
+
+#phone {
+  color: #fff;
+}
+#phone:hover {
+  color: #AB2D34;
+}
+
+#footer-social-media ul li {
+	padding-right: 2em;
+}
+
+#footer-copyright {
+	padding-top: 1.5em;
+  color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 64em) {
+  .banner {
+    background-image: url(../images/mbcLogos/banner2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+
+    text-align: center;
+
+    margin-top: -3em;
+    margin-bottom: -10em;
+  }
+  #banner-header-text {
+    display: none;
+  }
+
+  .card {
+    padding-bottom: 1em;
+  }
+
+  #special-text {
+    margin-bottom: -1em; 
+  }
+
+  #text-about {
+    margin-bottom: 1em;
+  }
+
+  .club-events {
+    display: none;
+  }
+
+  .date-text {
+    display: none;
+  }
+
+  .header-text {
+    margin-top: 2em;
+  }
+
+  /*Member Cards*/
+  .portrait-row-small {
+    margin-top: 2em;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-text {
+    display: none;
+  }
+  .card-social img {
+    width: 30px;
+    height: 30px;
+    margin-top: 1.25em;
+    margin-right: -.5em;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+}
+
+@media screen and (max-width: 37.5em) {
+  .members-blurb {
+    padding: 2.65em 1em;
+  }
+}
