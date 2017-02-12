@@ -418,7 +418,7 @@ a.btn-apply:hover {
 * Resource Pages
 ******************/
 
-#excel-workspace .container {
+#professional-development .container, #excel-workspace .container {
   width: 70%;
   height: auto;
 }
@@ -463,10 +463,14 @@ a.btn-apply:hover {
 * Committees Page 
 ******************/
 
+#committe .container {
+  width: 70%;
+  height: auto;
+}
+
 .main-descriptive-text {
   padding: 0 5em 1.5em 5em;
 }
-
 
 /* The Close Button */
 .close {
