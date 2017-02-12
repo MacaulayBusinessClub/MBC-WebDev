@@ -12,7 +12,7 @@ html body {
   margin-right: auto;
 
   font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Arvo', sans-serif;
 }
 
 /* Header */
@@ -186,7 +186,7 @@ main {
 ******************/
 
 .banner {
-  background: url(../images/mbcLogos/banner3.png);
+  background: url(../../images/logos/banner3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
