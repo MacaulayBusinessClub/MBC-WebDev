@@ -366,12 +366,40 @@ main {
   padding-top: 1em;
 }
 
+.myBtn {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto; 
+  width: 100%;
+
+  text-align: center;
+}
+
+a.btn-apply {
+  padding: 1em 3em;
+
+  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #FFFFFF;
+
+  font-size: 20px;
+  font-family: 'Arvo', sans-serif;
+  font-weight: bold;
+}
+a.btn-apply:hover {
+  text-decoration: none;
+  color: #AB2D34;
+  background-image: linear-gradient(to top right, #FFFFFF, #FFFFFF);
+  border: 1px solid #AB2D34;
+}
+
 /******************
 * General Membership Page 
 ******************/
 
 .schools-grid {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 
@@ -381,6 +409,9 @@ main {
 .schools-grid li {
   display: inline-block;
   padding: 1em;
+}
+.schools-grid-mobile {
+  display: none;
 }
 
 /******************
@@ -499,6 +530,7 @@ footer ul li {
 
 #footer-navigation a:hover {
 	background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  border: 1px solid #FFFFFF;
   color: #fff;
 }
 
@@ -598,6 +630,26 @@ footer ul li {
     width: 100%;
     height:  300px;
   }
+
+  /*General Membership*/
+  .schools-grid {
+    display: none;
+  }
+  .schools-grid-mobile {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    text-align: center;
+  }
+  .schools-grid-mobile .row .college-name {
+    border: 1px solid #AB2D34;
+    padding: 10px;
+    margin: 5px 0;
+    font-weight: bold;
+  } 
+
+  /*Footer*/
   footer a {
     text-decoration: none;
   }
@@ -605,6 +657,7 @@ footer ul li {
 }
 
 @media screen and (max-width: 37.5em) {
+  /*Members page*/
   .members-blurb {
     padding: 2.65em 1em;
   }
