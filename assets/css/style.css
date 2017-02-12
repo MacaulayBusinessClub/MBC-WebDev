@@ -53,6 +53,7 @@ nav div a {
 nav div a:hover {
 	background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
   color: #fff;
+  text-decoration: none;
 }
 
 /*nav .icon {
@@ -262,15 +263,20 @@ main {
   font-weight: bold;
 }
 
-.readMore-btn {
+.btn-read-more {
   padding: 1em;
-  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
   color: #fff;
-
+  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
   border-radius: 5px;
+  font-weight: bold;
 }
-.readMore-btn:hover {
-  color: #BFDDE0;
+.btn-read-more:hover {
+  color: #AB2D34;
+  background-image: linear-gradient(to top right, #FFFFFF, #FFFFFF);
+  border: 1px solid #AB2D34;
+}
+a.btn-read-more:hover {
+  text-decoration: none;
 }
 
 .club-events {
