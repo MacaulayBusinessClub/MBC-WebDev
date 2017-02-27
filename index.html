@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-
   BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header>
-    <div class="navbar-fixed">
+    <div class="navbar-fixed navigation-desktop">
       <logo>
         <a href="index.html"><img src="images/logos/logo.png" width="96" height="96" alt="MBC logo"></a>
       </logo>
@@ -36,6 +37,23 @@
             <a href="join/partner.html">Partner</a>
           </div>
         </div>
+      </nav>
+    </div>
+    <div class="navbar-fixed navigation-mobile">
+      <logo>
+        <a href="index.html"><img src="images/logos/logo.png" width="80" height="80" alt="MBC logo"></a>
+      </logo>
+      <nav>
+        <div id="sideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="upcoming-events.html">Events</a>
+          <a href="http://www.mhcbusiness.nyc/news/">News</a>
+          <a href="">General</a>
+          <a href="">Planning</a>
+          <a href="">Partner</a>
+        </div>
+        <div id="nav-mobile-closeBtn" onclick="openNav()"><i style="font-size:24px" class="fa">&#xf0c9;</i></div>
       </nav>
     </div>
   </header>
@@ -73,28 +91,38 @@
           </div>
         </div>
         <div class="row">
-          <div class="subheader-text" id="about-subheading">There are four committees<br>within MBC</div>
+          <div class="subheader-text" id="about-subheading">There are six committees<br>within MBC</div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-xs-6 about-small-card-2">
-            <img src="assets/icons/marketing-icon.png" width="72" height="72">
+          <div class="col-md-4 col-xs-6 about-small-card-2">
+            <img src="assets/icons/event-planning-icon.png" width="72" height="72"/>
+            <h4 class="about-small-header">Event Planning</h4>
+            <p>Lead planning of networking events, <br> workshops and panels</p>
+          </div>
+          <div class="col-md-4 col-xs-6 about-small-card-2">
+            <img src="assets/icons/marketing-icon.png" width="72" height="72"/>
             <h4 class="about-small-header">Marketing</h4>
-            <p>Creatively compose marketing materials for each event</p>
+            <p>Creatively compose marketing <br> materials for each event</p>
           </div>
-          <div class="col-md-3 col-xs-6 about-small-card-2">
-            <img src="assets/icons/content-icon.png" width="72" height="72">
-            <h4 class="about-small-header">Content</h4>
-            <p>Publish and edit original articles onto the MBC website</p>
+          <div class="col-md-4 col-xs-6 about-small-card-2">
+            <img src="assets/icons/content-icon.png" width="72" height="72"/>
+            <h4 class="about-small-header">Content Creation</h4>
+            <p>Publish and edit original articles <br> onto the MBC website</p>
           </div>
-          <div class="col-md-3 col-xs-6 about-small-card-2">
-            <img src="assets/icons/code-icon.png" width="72" height="72">
-            <h4 class="about-small-header">Web</h4>
-            <p>Develop and maintain the official website of the MBC</p>
+          <div class="col-md-4 col-xs-6 about-small-card-2">
+            <img src="assets/icons/code-icon.png" width="72" height="72"/>
+            <h4 class="about-small-header">Web Development</h4>
+            <p>Develop and maintain the official <br> website of the MBC</p>
           </div>
-          <div class="col-md-3 col-xs-6 about-small-card-2">
-            <img src="assets/icons/fin-acct-icon.png" width="72" height="72">
-            <h4 class="about-small-header">Finance & Accounting</h4>
-            <p>Coordinate financial and accounting workshops</p>
+          <div class="col-md-4 col-xs-6 about-small-card-2">
+            <img src="assets/icons/fin-acct-icon.png" width="72" height="72"/>
+            <h4 class="about-small-header">Finance &amp; Accounting</h4>
+            <p>Plan the budget and conduct stock <br> pitches and analyses</p>
+          </div>
+          <div class="col-md-4 col-xs-6 about-small-card-2">
+            <img src="assets/icons/data-analytics-icon.png" width="72" height="72"/>
+            <h4 class="about-small-header">Data Analytics</h4>
+            <p>Analyze club data to increase marketing <br> and event planning efficieny</p>
           </div>
         </div>
       </div>
@@ -118,12 +146,12 @@
 
     <!--Club News Business & Techs-->
     <div class="club-news">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="main-header-text" style="text-align:center">News by MBC</div>
         </div>
         <div class="row news-row">
-          <div class="col-md-4 col-xs-12">
+          <div class="col-md-4 col-xs-6">
             <div class="card" style="width: 100%;">
               <img class="card-img-top img-thumbnail" src="images/articles/pic1.png" width="100%" height="100%">
               <div class="card-block">
@@ -136,7 +164,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
+          <div class="col-md-4 col-xs-6">
             <div class="card" style="width: 100%;">
               <img class="card-img-top img-thumbnail" src="images/articles/pic2.png" width="100%" height="100%">
               <div class="card-block">
@@ -149,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
+          <div class="col-md-4 col-xs-6">
             <div class="card" style="width: 100%;">
               <img class="card-img-top img-thumbnail" src="images/articles/pic3.png" width="100%" height="100%">
               <div class="card-block">
@@ -157,18 +185,16 @@
                 <div class="small-date">Nov. 21, 2016</div>
                 <p class="card-text"><span class="author">Matthew Lam</span>
                 <br>
-                Snap Inc., more commonly known as Snapchat, has recently filed confidential paperwork for an IPO that may reach up to $25 billion dollars.</p>
+                Snap Inc., more commonly known as Snapchat, has recently filed confidential paperwork for an IPO...</p>
                 <a href="http://www.mhcbusiness.nyc/news/snap-inc-filing-for-ipo/" target="_blank" class="btn-read-more">Read more</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row news-row">
-          <div class="col-md-4 col-xs-12">
+          <div class="col-md-4 col-xs-6">
             <div class="card" style="width: 100%;">
               <img class="card-img-top img-thumbnail" src="images/articles/pic4.jpeg" width="100%" height="100%">
               <div class="card-block">
-                <h4 class="card-title">The Impact of Daylight Savings Time on Business</h4>
+                <h4 class="card-title">The Impact of Daylight Savings...</h4>
                 <div class="small-date">Nov. 15, 2016</div>
                 <p class="card-text"><span class="author">John Casella</span>
                 <br>Last Sunday, November 6th, most of North America received a precious extra hour of sleep from Daylight Savings Time (DST).</p>
@@ -176,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
+          <div class="col-md-4 col-xs-6">
             <div class="card" style="width: 100%;">
               <img class="card-img-top img-thumbnail" src="images/articles/pic5.png" width="100%" height="100%">
               <div class="card-block">
@@ -188,7 +214,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-xs-12">
+          <div class="col-md-4 col-xs-6">
             <div class="card" style="width: 100%;">
               <img class="card-img-top img-thumbnail" src="images/articles/pic6.png" width="100%" height="100%">
               <div class="card-block">
@@ -208,7 +234,7 @@
     <div class="club-events">
       <div class="container">
         <div class="calendar">
-          <div class="main-header-text">Calendar</div>
+          <div class="main-header-text">Calendar of Events</div>
           <div class="col-md-12 col-xs-12" align="center">
             <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=businessclub%40macaulay.cuny.edu&amp;color=%232952A3&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
           </div>
@@ -265,9 +291,9 @@
     </footer>
   </main>
   <!--Script.js File-->
-  <script src="assets/js/script.js" type="text/javascript"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="assets/lightbox2-master/src/js/lightbox.js"></script>     
+  <script src="assets/lightbox2-master/src/js/lightbox.js"></script>
+  <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 </html> 
