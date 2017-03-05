@@ -298,6 +298,9 @@ a.btn-read-more:hover {
 /******************
 * Events Page 
 ******************/
+#upcoming-events .col-md-4{
+  text-align: center;
+}
 
 .date-text {font-size: 24px}
 
