@@ -51,8 +51,9 @@ nav div a {
 }
 
 nav div a:hover {
-	background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
-  color: #fff;
+	/*background-image: linear-gradient(to top right, #AB2D34, #C43C2A);*/
+  color: #AB2D34;
+  border: 1px solid #AB2D34;
   text-decoration: none;
 }
 
@@ -68,8 +69,9 @@ nav div a:hover {
   }
 
   button.dropbtn:hover {
-   background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
-   color: #fff;
+   /*background-image: linear-gradient(to top right, #AB2D34, #C43C2A);*/
+   color: #AB2D34;
+   border: 1px solid #AB2D34;
  }
 
  /* The container <div> - needed to position the dropdown content */
@@ -101,8 +103,9 @@ nav div a:hover {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
-  color: #fff;
+  /*background-image: linear-gradient(to top right, #AB2D34, #C43C2A);*/
+  color: #AB2D34;
+  border: 1px solid #AB2D34;
 }
 
 /* Show the dropdown menu on hover */
@@ -357,6 +360,27 @@ a.btn-read-more:hover {
   background-color: #eee
 }
 
+.previous-events-pagination{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+  text-align: center;
+}
+
+.previous-events-pagination ul li a{
+  padding: .5em 1em;
+  font-weight: bold;
+  color: #AB2D34;
+  background-image: linear-gradient(to top right, #FFFFFF, #FFFFFF);
+  border: 1.5px solid #AB2D34;
+  border-radius: 0;
+}
+
+.previous-events-pagination ul li a:hover{
+  color: #111;
+  border: 1.5px solid #AB2D34;
+}
+
 /******************
 * Join Pages
 ******************/
@@ -508,7 +532,7 @@ footer {
   padding-top: 3em;
   padding-bottom: 4em;
   
-  background-color: #404040;
+  background-color: #111;
 
   text-align: center;
 }
@@ -538,9 +562,9 @@ footer ul li {
 }
 
 #footer-navigation a:hover {
-	background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
-  border: 1px solid #FFFFFF;
-  color: #fff;
+	background-image: linear-gradient(to top right, #FFFFFF, #FFFFFF);
+  border: 1px solid #AB2D34;
+  color: #AB2D34;
 }
 
 #resources {
