@@ -309,9 +309,9 @@ a.btn-read-more:hover {
 * Events Page 
 ******************/
 
-.date-text {font-size: 28px}
+.date-text {font-size: 24px}
 
-.event-heading {font-size: 32px;}
+.event-heading {font-size: 28px;font-weight: bold;}
 
 .event-subheading {font-size: 18px}
 
@@ -321,8 +321,8 @@ a.btn-read-more:hover {
   padding: 1em 1.5em;
 }
 .rsvp-link:hover {
-  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
-  color: #fff;
+  color: #AB2D34;
+  border: 1px solid #AB2D34;
 }
 
 .previous-events, .rsvp-link {
@@ -666,7 +666,7 @@ footer ul li {
   .date-text {display: none;}
 
   .header-text {margin-top: 2em;}
-
+  .mobile-text-hidden {display: none;}
   /*Member Cards*/
   .portrait-row-small {margin-top: 2em;}
   .card-title {font-size: 16px;}
