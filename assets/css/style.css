@@ -559,27 +559,6 @@ footer ul li {
 	padding-right: .5em;
 }
 
-#footer-navigation a {
-	color: #fff;
-
-	text-decoration: none;
-	transition: background-image .3s;
-	padding: 1em 1.5em;
-}
-
-#footer-navigation a:hover {
-	background-image: linear-gradient(to top right, #FFFFFF, #FFFFFF);
-  border: 1px solid #AB2D34;
-  color: #AB2D34;
-}
-
-#resources {
-	width: 100%;
-	height: auto;
-
-	margin-top: 1em;
-}
-
 #footer-location {
 	margin-top: 2em;
 
@@ -630,7 +609,7 @@ footer ul li {
   .sidenav a {
     padding: 8px 8px 8px 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: #818181;
     display: block;
     transition: 0.3;
