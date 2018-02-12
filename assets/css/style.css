@@ -1,0 +1,705 @@
+/***************************
+CSS - Macaulay Business Club
+Version 2
+Ramanpreet Chand, VP Web 
+****************************/
+
+html body {
+  width: 100%;
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+
+  width: 100%;
+  height: auto;
+
+  box-shadow: 0px 5px 5px #eeeeee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+}
+
+/* Logo */
+logo {
+  margin-left: 1em;
+}
+
+/* Navigation */
+nav {
+  float: right;
+  font-family: 'Arvo', sans-serif;
+  margin-right: 2em;
+  margin-top: 1.5em;
+}
+
+nav div a {
+	color: #000;
+	text-decoration: none;
+  transition: background-image .3s;
+  padding: 1em 1.5em;
+}
+
+nav div a:hover {
+  color: #AB2D34;
+  border: 1px solid #AB2D34;
+  text-decoration: none;
+}
+
+/* Dropdown Button */
+button.dropbtn {
+  border: none;
+  cursor: pointer;
+
+  padding: 1em 1.5em;
+
+  background-color: #fff;
+}
+
+button.dropbtn:hover {
+ color: #AB2D34;
+ border: 1px solid #AB2D34;
+}
+
+nav div, nav div.dropdown {
+  position: relative;
+  display: inline-block;
+
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  min-width: 125px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #AB2D34;
+  border: 1px solid #AB2D34;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover {
+  background-color: #eeeeee;
+}
+
+button.dropbtn:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #000;
+  float: right;
+  margin-left: 5px;
+}
+
+button.dropbtn:hover:after {
+  content: "\2796";
+} 
+
+/******************
+* Navigation Mobile
+******************/
+.navigation-mobile{display: none;}
+
+/******************
+* Main - All Pages 
+******************/
+
+#main-index {
+  position: relative;
+  margin-top: 5em;
+}
+
+main {
+  margin-top: 10em
+}
+
+/******************
+* Text features 
+******************/
+
+.main-header-text {
+	font-size: 40px;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+
+  padding: 1.25em 0;
+
+  text-align:center; 
+}
+
+.header-text, .subheader-text {
+  font-size: 28px;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+
+.subheader-text {
+  font-size: 20px;
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.article-header-text {
+  font-size: 20px;
+}
+.article-blurb-text {
+  font-size: 16px;
+}
+
+#text-about {
+  text-align: justify;
+  padding: 0 4em;
+  font-size: 16px;
+}
+
+/******************
+* Club Banner 
+******************/
+
+.banner {
+  background: url(../../images/logos/banner3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30em;
+  margin-top: 7em;
+}
+
+#banner-header-text {
+  color: #fff;
+
+  font-size: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000;
+
+  padding-top: 170px;
+  text-align: center;
+}
+
+/******************
+/* Main Content Home Page 
+******************/
+
+#about-subheading {
+  padding: 1em 0;
+}
+
+.about-small-card, .about-small-card-2 {
+  padding: 2.5em 0;
+}
+
+.about-small-card:hover {
+  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #fff;
+}
+
+.about-small-card-2:hover {
+  background-image: linear-gradient(to top right, #BFDDE0, #FFFFFF);
+}
+
+.about-small-header {
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+}
+
+.about-small-description {
+  text-align: justify-all;
+  padding: 0 1.5em;
+}
+
+.club-news .row.news-row .col-md-4 {
+  margin-bottom: 2em;
+}
+
+.card-title {
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+
+.card-text {
+  padding-bottom: 1em;
+}
+
+.small-date {
+  font-family: 'Arvo', serif;
+  font-size: 12px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.btn-read-more {
+  padding: 1em;
+  font-weight: bold;
+  color: #AB2D34;
+  background-image: linear-gradient(to top right, #FFFFFF, #FFFFFF);
+  border: 1px solid #AB2D34;
+}
+.btn-read-more:hover {
+  color: #111;
+}
+
+a.btn-read-more:hover {
+  text-decoration: none;
+}
+
+.club-events {
+  margin-bottom: 5em;
+}
+
+/******************
+* Members Page 
+******************/
+
+.portrait-row {
+  padding: 1em 0;
+}
+.portrait {
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px #888;
+}
+.card-block {
+  padding-left: 1em;
+}
+.card-social {
+  float: right;
+  margin-top: -3.5em;
+  padding-right: 1em;
+}
+
+
+/******************
+* Events Page 
+******************/
+#upcoming-events .col-md-4{
+  text-align: center;
+}
+
+.date-text {font-size: 24px}
+
+.event-heading {font-size: 28px;font-weight: bold;}
+
+.event-subheading {font-size: 18px}
+
+.event-description {font-size: 14px}
+
+.rsvp-link {
+  padding: 1em 1.5em;
+}
+.rsvp-link:hover {
+  color: #AB2D34;
+  border: 1px solid #AB2D34;
+}
+
+.previous-events, .rsvp-link {
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+
+  padding: 1em;
+}
+
+.previous-events:hover {
+	transition: color .2s ease-in-out;
+  color: #AB2D34;
+}
+
+.pages {
+  font-size: 16px;
+  padding-top: .5em;
+}
+.pages ul {
+  float: right;
+  list-style-type: none;
+}
+.pages ul li {
+  display: inline-block;
+  border: 1px dotted black;
+  border-radius: 1000px;
+
+  padding: .25em 1em .25em 1em;
+}
+.pages ul li a {
+  text-decoration: none;
+}
+.pages ul li:hover {
+  background-color: #eee
+}
+
+.previous-events-pagination{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+  text-align: center;
+}
+
+.previous-events-pagination ul li a{
+  padding: .5em 1em;
+  font-weight: bold;
+  color: #AB2D34;
+  background-image: linear-gradient(to top right, #FFFFFF, #FFFFFF);
+  border: 1.5px solid #AB2D34;
+  border-radius: 0;
+}
+
+.previous-events-pagination ul li a:hover{
+  color: #111;
+  border: 1.5px solid #AB2D34;
+}
+
+/******************
+* Join Pages
+******************/
+
+#general-members .container, #partner .container, #planning-committee .container{
+  width: 75%;
+  height: auto;
+}
+
+.join-membership-text, .interview-tips-text {
+  padding-top: 1em;
+}
+
+.myBtn {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto; 
+  width: 100%;
+
+  text-align: center;
+}
+
+a.btn-apply {
+  padding: 1em 3em;
+
+  background-image: linear-gradient(to top right, #AB2D34, #C43C2A);
+  color: #FFFFFF;
+
+  font-size: 20px;
+  font-family: 'Arvo', sans-serif;
+  font-weight: bold;
+}
+a.btn-apply:hover {
+  text-decoration: none;
+  color: #AB2D34;
+  background-image: linear-gradient(to top right, #FFFFFF, #FFFFFF);
+  border: 1px solid #AB2D34;
+}
+
+/******************
+* General Membership Page 
+******************/
+
+.schools-grid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  list-style-type: none;
+}
+
+.schools-grid li {
+  display: inline-block;
+  padding: 1em;
+}
+.schools-grid-mobile {
+  display: none;
+}
+
+/******************
+* Gallery
+******************/
+
+#gallery .flyer a img {
+  width: 100%;
+  height: 100%
+}
+/*#gallery .flyer-portrait a img{
+  width: 300px;
+  height: 350px;
+}*/
+
+/******************
+* Resource Pages
+******************/
+
+#professional-development .container, #excel-workspace .container {
+  width: 70%;
+  height: auto;
+}
+
+/******************
+* Excel Workspace 
+******************/
+.excel-sub-subheader-text {
+  text-align: left;
+  font-size: 20px;
+
+}
+.excel-video {
+  margin: 2em auto;
+  text-align: center;
+}
+.excel-video iframe {
+  width: 70%;
+  height: 385px;
+}
+
+/*************************
+* Career Interview Series
+* Video Text
+*************************/
+.video-title {
+  padding-top: .5em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.video-publish-date-text {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+}
+.video-blurb-text {
+  padding: .5em .5em 1em .5em;
+  text-align: justify-all;
+}
+
+/******************
+* Committees Page 
+******************/
+
+#committee .container {
+  width: 70%;
+  height: auto;
+}
+
+.main-descriptive-text {
+  padding: 0 5em 1.5em 5em;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 5em;
+  right: 2em;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  font-family: 'Arvo', sans-serif;
+
+  width: 100%;
+  height: auto;
+
+  margin-top: 3em;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: 3em;
+  padding-bottom: 4em;
+  
+  background-color: #111;
+
+  text-align: center;
+}
+#members-footer {
+  margin-top: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-top: 2em;
+}
+
+footer ul li {
+  display: inline-block;
+}
+#footer-navigation ul li {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+#footer-location {
+	margin-top: 2em;
+
+	font-size: 16px;
+}
+
+.footer-header-subtext {
+  color: #fff;
+}
+
+#phone {
+  color: #fff;
+}
+#phone:hover {
+  color: #AB2D34;
+}
+
+#footer-social-media ul li {
+	padding-right: 2em;
+}
+
+#footer-copyright {
+	padding-top: 1.5em;
+  color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 64em) {
+
+  .navigation-desktop{display: none; }
+  .navigation-mobile{display: block;}
+
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    background-image: none;
+    border: 1px solid #FFFFFF;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav #nav-mobile-closeBtn {border: none;}
+
+  main {margin-top: 5em;}
+
+  .banner {display: none;}
+
+  .card {padding-bottom: 1em;}
+
+  #special-text {margin-bottom: -1em;}
+
+  #text-about {margin-bottom: 1em;}
+
+  .club-events {display: none;}
+
+  .date-text {display: none;}
+
+  .header-text {margin-top: 2em;}
+  .mobile-text-hidden {display: none;}
+  /*Member Cards*/
+  .portrait-row-small {margin-top: 2em;}
+  .card-title {font-size: 16px;}
+  .card-text {display: none;}
+  .card-social img {
+    width: 30px;
+    height: 30px;
+    margin-top: 1.25em;
+    margin-right: -.5em;
+  }
+
+  /*Excel Workspace*/
+  .excel-video iframe {
+    width: 100%;
+    height:  300px;
+  }
+
+  /*General Membership*/
+  .schools-grid {display: none;}
+  .schools-grid-mobile {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    text-align: center;
+  }
+  .schools-grid-mobile .row .college-name {
+    border: 1px solid #AB2D34;
+    padding: 10px;
+    margin: 5px 0;
+    font-weight: bold;
+  } 
+
+  /*************************
+  * Career Interview Series
+  * Video Text
+  *************************/
+  #career-interview-series .container .row .col-md-12 .col-xs-12 iframe {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*Footer*/
+  footer a {text-decoration: none;}
+}
+
+@media screen and (max-width: 37.5em) {
+
+  /*Members page*/
+  .members-blurb {
+    padding: 2.65em 1em;
+  }
+}
