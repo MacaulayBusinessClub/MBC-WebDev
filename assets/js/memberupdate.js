@@ -74,7 +74,7 @@ var members =
         }
 
 
-$( document ).ready(function() {
+$(document ).ready(function() {
     for(member in members){
         var name = members[member].name;
         var image = members[member].imageUrl;

@@ -5,5 +5,3 @@ function openNav() {
 function closeNav() {
 	document.getElementById("sideNavigation").style.width = "0";
 }
-
-
