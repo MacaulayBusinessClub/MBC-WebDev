@@ -2,6 +2,7 @@
 CSS - Macaulay Business Club
 Version 2
 Ramanpreet Chand, VP Web 
+Boubacar Diallo, Web
 ****************************/
 
 html body {
@@ -279,15 +280,23 @@ a.btn-read-more:hover {
 ******************/
 
 .portrait-row {
-  padding: 1em 0;
+  padding: 2em 0;
 }
-.portrait {
+
+.member{
   border: 1px solid #eee;
   box-shadow: 0 0 5px #888;
+  height:29em;
 }
+
+.portrait {
+  height:23em;
+}
+
 .card-block {
   padding-left: 1em;
 }
+
 .card-social {
   float: right;
   margin-top: -3.5em;
